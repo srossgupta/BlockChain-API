@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://srossg.andrew.cmu.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://srossg.andrew.cmu.edu/">
+
+<xs:element name="NoSuchAlgorithmException" type="tns:NoSuchAlgorithmException"/>
+
+<xs:element name="UnsupportedEncodingException" type="tns:UnsupportedEncodingException"/>
+
+<xs:element name="addBlock" type="tns:addBlock"/>
+
+<xs:element name="addBlockResponse" type="tns:addBlockResponse"/>
+
+<xs:element name="getLatestBlock" type="tns:getLatestBlock"/>
+
+<xs:element name="getLatestBlockResponse" type="tns:getLatestBlockResponse"/>
+
+<xs:element name="getTime" type="tns:getTime"/>
+
+<xs:element name="getTimeResponse" type="tns:getTimeResponse"/>
+
+<xs:element name="isChainValid" type="tns:isChainValid"/>
+
+<xs:element name="isChainValidResponse" type="tns:isChainValidResponse"/>
+
+<xs:element name="toString1" type="tns:toString1"/>
+
+<xs:element name="toString1Response" type="tns:toString1Response"/>
+
+<xs:complexType name="getTime">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:timestamp" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="timestamp">
+<xs:sequence>
+<xs:element name="nanos" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBlock">
+<xs:sequence>
+<xs:element name="arg0" type="tns:block" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="block">
+<xs:sequence>
+<xs:element name="data" type="xs:string" minOccurs="0"/>
+<xs:element name="difficulty" type="xs:int"/>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="nonce" type="xs:integer" minOccurs="0"/>
+<xs:element name="previousHash" type="xs:string" minOccurs="0"/>
+<xs:element name="timestamp" type="tns:timestamp" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBlockResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="NoSuchAlgorithmException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UnsupportedEncodingException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="toString1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="toString1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLatestBlock">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getLatestBlockResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:block" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isChainValid">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="isChainValidResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

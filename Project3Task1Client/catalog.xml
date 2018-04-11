@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:10090/Project3Task1Server/BlockChain?WSDL" uri="xml-resources/web-service-references/BlockChain/wsdl/localhost_10090/Project3Task1Server/BlockChain.wsdl"/>
+    <system systemId="http://localhost:10090/Project3Task1Server/BlockChain?xsd=1" uri="xml-resources/web-service-references/BlockChain/wsdl/localhost_10090/Project3Task1Server/BlockChain.xsd_1.xsd"/>
+    <system systemId="http://localhost:10090/Project3Task1Server/BlockChainServer?WSDL" uri="xml-resources/web-service-references/BlockChainServer/wsdl/localhost_10090/Project3Task1Server/BlockChainServer.wsdl"/>
+    <system systemId="http://localhost:10090/Project3Task1Server/BlockChainServer?xsd=1" uri="xml-resources/web-service-references/BlockChainServer/wsdl/localhost_10090/Project3Task1Server/BlockChainServer.xsd_1.xsd"/>
+</catalog>
